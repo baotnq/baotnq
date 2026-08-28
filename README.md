@@ -10,7 +10,9 @@ I design systems from invariants — state what must hold, then build so violati
 
 **[operational-friction](https://github.com/baotnq/operational-friction)** — why the workaround is the vulnerability: Bybit, Ronin, MasterChef read as friction chains. Dependency and trust-boundary inventory fails where nobody wrote the dependency down.
 
-Verify the effect. Verify the operator. Verify the knowledge. One rule, three objects.
+**[easywebhub/tasks](https://github.com/easywebhub/tasks)** — the same discipline on people, published 2016: work-item-based communication, two roles with mutual obligations, estimates owned by the assignee and trade-offs decided by the requester — no silent moves. These rules ran my teams a decade before they governed AI agents. (Vietnamese; English summary at top.)
+
+Verify the effect. Verify the operator. Verify the knowledge. One rule, three objects — and it started with how a team works.
 
 **Paper** — D. Daudier, **T. Ngoc Quoc Bao**, K. Ogata. *A Proof Score Approach to Formal Verification of an Imperative Programming Language Compiler.* Springer **LNCS 10795**, SOFL+MSVL 2017, pp. 200–217 — [doi:10.1007/978-3-319-90104-6_13](https://doi.org/10.1007/978-3-319-90104-6_13). Builds on my MSc thesis and completes the correctness proof for all terminating programs.
 
