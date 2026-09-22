@@ -1,0 +1,18 @@
+# ===== DATA-LEAK RULE =====
+# Repo này PUBLIC. Mọi file nội bộ phải nằm trong _internal/ và KHÔNG BAO GIỜ được commit.
+# Chỉ nội dung web (essay đã duyệt + PNG minh họa + CV pdf cho /contact) mới được đưa ra ngoài _internal/.
+
+# Toàn bộ vùng nội bộ
+_internal/
+
+# Chặn thêm theo tên, phòng file nội bộ bị copy ra ngoài _internal/
+files.zip
+build-spec-*.md
+handoff*.md
+handoff_*.md
+provenance-*.md
+method-*.md
+*raw-material*.md
+
+# Rác hệ thống
+.DS_Store

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ankayma — Bao Trinh</title>
+<meta name="description" content="One implementation of the accountability framework, enforced at agent speed. A description of the mechanism.">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+  <a class="brand" href="../../">Bao Trinh</a>
+  <nav>
+    <a href="../">Risk</a>
+    <a href="../../speed/">Speed</a>
+    <a href="../../about/">About</a>
+    <a href="../../contact/">Contact</a>
+  </nav>
+</header>
+
+<main class="essay">
+  <h1>Ankayma</h1>
+  <p class="subtitle">One enforcement of the framework, running. A description of the mechanism.</p>
+
+  <p><a href="../">The essay</a> argues that the accountability framework for
+  AI agents already exists, and that the one genuinely new requirement is
+  enforcement at agent speed. An argument like that owes the reader an
+  existence proof: not a paper design, but something that runs. Ankayma is
+  that proof. What follows describes the mechanism — how each of the four
+  insurability conditions is met in practice.</p>
+
+  <h2 id="zone-isolation">Zone isolation</h2>
+  <p>Zones are isolated as a blind private mesh (WireGuard, zero-trust). The
+  design is blind by construction: a compromised node sees no map of the
+  network and holds no standing route to any neighbor. The path to a critical
+  zone does not exist by default — it is created for the life of an approved
+  short-term grant and disappears when the grant expires. An agent that has
+  taken over a node has nowhere to go: no topology to read, no persistent
+  route to follow.</p>
+
+  <h2 id="authentication">Authentication the agent cannot forge</h2>
+  <p>Crossing a zone boundary requires two things an agent cannot fabricate: a
+  hardware identity, and a human. Approval is bound to hardware-backed
+  authentication — FaceID, TouchID, or a YubiKey — so a grant exists only if a
+  specific person, on a specific device, produced it. Software alone, however
+  capable, cannot mint a crossing.</p>
+
+  <h2 id="grants">Tamper-proof grants, third-party monitored</h2>
+  <p>Every grant is tamper-proof: it cannot be edited or deleted after the
+  fact, and it is monitored by a third party rather than the operator alone.
+  This is what turns "the AI did it" from an excuse into a checkable fact —
+  the record answers who granted this authority, within what bounds, and
+  signed by whom. A record that cannot be rewritten is also the precondition
+  for any external party to price the risk at all.</p>
+
+  <h2 id="ceilings">A ceiling per zone</h2>
+  <p>Each zone carries its own ceiling — the maximum loss if the entire zone
+  is lost. Ceilings are stated in advance and bounded by the isolation itself:
+  an agent cannot reach effects outside its zone, so the zone's ceiling is the
+  worst case, not a hope. Summed against the capital behind them, the ceilings
+  make the system's exposure a number rather than an estimate.</p>
+
+  <hr>
+
+  <p>None of this claims to be the best way. It is one way — evidence that the
+  four conditions can be met by something that runs, and that the question
+  "can this be built" is closed. The framework belongs to everyone; Ankayma is
+  one enforcement of it.</p>
+
+  <div class="byline">
+    Bao Trinh — I work on responsibility architecture for agent systems.
+    <a href="../../about/">About</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <a href="../">Back to the essay</a> &middot; <a href="../../">Home</a>
+</footer>
+
+</div>
+</body>
+</html>

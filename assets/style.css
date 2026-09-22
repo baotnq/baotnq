@@ -1,0 +1,322 @@
+/* baotrinh.com — minimal, text-first */
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --rule: #ddd;
+  --bg: #ffffff;
+  --link: #2456a4;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.075rem;
+  line-height: 1.65;
+}
+
+.page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+/* header / nav */
+.site-header {
+  margin-bottom: 3rem;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.site-header .brand { color: var(--text); text-decoration: none; font-weight: 600; }
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.site-header nav a:hover { color: var(--text); text-decoration: underline; }
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+}
+.subtitle {
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 2rem;
+}
+
+a { color: var(--link); }
+a:hover { text-decoration-thickness: 2px; }
+
+p { margin: 0 0 1.1rem; }
+
+figure { margin: 2rem 0; }
+figure img { max-width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
+figcaption {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+}
+
+/* home — full-bleed bands, subtle alternation */
+.container {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+.container .site-header { padding-top: 2.5rem; }
+
+.band { padding: 3rem 0; }
+.band-alt { background: #f7f6f3; }
+.band-hero { padding-top: 4rem; }
+
+.intro {
+  text-align: center;
+  margin: 0 auto 2.5rem;
+}
+.intro-name { margin: 0 0 0.5rem; font-size: 1.35rem; }
+.intro p { margin: 0; }
+
+.map-root {
+  text-align: center;
+  margin: 0 auto;
+}
+.map-root p { margin: 0 0 1rem; }
+.map-root p:last-child { margin-bottom: 0; }
+.hero-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+.hero-for {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0;
+}
+.map-root .hero-pair { line-height: 1.9; }
+.map-root .hero-motto {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+/* seven-title list inside the essay card */
+a.card-name { display: block; text-decoration: none; color: inherit; }
+a.card-name:hover { text-decoration: underline; }
+.card-chain {
+  margin: 0 auto 0.25rem;
+  padding: 0;
+  list-style: decimal;
+  display: inline-block;
+  text-align: left;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
+.card-chain li { margin-left: 1.4rem; }
+.card-chain a { color: var(--link); text-decoration: none; }
+.card-chain a:hover { text-decoration: underline; }
+.card-chain li::marker { color: var(--muted); }
+.proof-line {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 0.85rem 0 0;
+}
+.read-essay {
+  display: block;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--link);
+  text-decoration: none;
+}
+.read-essay:hover { text-decoration: underline; }
+.map-root-title {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.map-branches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+.branch-title {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.card {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+}
+a.card:hover .card-name { text-decoration: underline; }
+.card-name { font-weight: 600; line-height: 1.35; }
+.card-sub {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+.card-plain { background: none; }
+.card-arrow {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0.4rem 0;
+}
+
+.branch-risk .card-essay,
+.branch-risk a.card:not(.card-plain) {
+  background: #faf1ef;
+  border-color: #e5cfc9;
+}
+.branch-speed .card-essay,
+.branch-speed a.card:not(.card-plain) {
+  background: #eef6f1;
+  border-color: #cfe0d5;
+}
+.card-plain { background: none; border-color: var(--rule); }
+.card-plain .card-name { color: var(--muted); font-weight: 600; }
+
+.map-layer {
+  text-align: center;
+}
+.map-layer .card-name { font-size: 1.45rem; }
+.map-layer .card-sub {
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  line-height: 1.7;
+}
+.map-layer .card-sub { max-width: 38rem; margin-left: auto; margin-right: auto; }
+
+.map-tail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 0;
+}
+.map-tail .card-name { color: var(--text); }
+
+.forthcoming {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.principle {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.principle em { font-weight: 600; }
+
+/* seven-step chain (home, risk column) */
+.chain {
+  margin: 0.75rem 0 0;
+  padding: 0 0 0 1.5rem;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.chain a { color: var(--muted); text-decoration: none; }
+.chain a:hover { color: var(--text); text-decoration: underline; }
+.branch-risk .chain { margin-bottom: 0.75rem; }
+
+/* table of contents (essay page) */
+.toc {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #faf9f6;
+  padding: 1rem 1.25rem;
+  margin: 0 0 2.5rem;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+}
+.toc-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.toc ol { margin: 0; padding-left: 1.4rem; line-height: 2; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* essay */
+.essay h2 { scroll-margin-top: 1.5rem; }
+.byline {
+  border-top: 1px solid var(--rule);
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.byline a { color: var(--muted); }
+
+/* footer */
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 600px) {
+  body { font-size: 1rem; }
+  h1 { font-size: 1.5rem; }
+  .hero-title { font-size: 1.5rem; }
+  .map-branches, .map-tail { grid-template-columns: 1fr; }
+  .site-header { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+}
