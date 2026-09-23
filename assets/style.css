@@ -83,7 +83,7 @@ hr {
 
 /* home — full-bleed bands, subtle alternation */
 .container {
-  max-width: 52rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -173,6 +173,8 @@ a.card-name:hover { text-decoration: underline; }
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
 }
+.branch { display: flex; flex-direction: column; }
+.branch .card-essay { flex: 1; }
 .branch-title {
   font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
   font-size: 0.95rem;
