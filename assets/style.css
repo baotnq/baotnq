@@ -322,3 +322,45 @@ a.card:hover .card-name { text-decoration: underline; }
   .map-branches, .map-tail { grid-template-columns: 1fr; }
   .site-header { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
 }
+
+/* standard page — long tables, clause anchors */
+.page-wide { max-width: 50rem; }
+.standard h3 { font-size: 1.02rem; font-weight: 600; margin: 2rem 0 0.6rem; scroll-margin-top: 1.5rem; }
+.standard li { margin-bottom: 0.4rem; scroll-margin-top: 1.5rem; }
+.standard li:target, .standard h3:target, .standard h2:target { background: #fff6d6; }
+.standard code {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.82em;
+  background: #f3f2ee;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+.table-wrap { overflow-x: auto; margin: 0 0 1.5rem; }
+.standard table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.standard th, .standard td {
+  border-top: 1px solid var(--rule);
+  padding: 0.5rem 0.6rem 0.5rem 0;
+  text-align: left;
+  vertical-align: top;
+}
+.standard th { font-weight: 600; color: var(--muted); border-top: none; border-bottom: 1px solid var(--rule); }
+.std-source {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-left: 3px solid var(--rule);
+  padding-left: 0.85rem;
+}
+.std-ref {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.std-ref a { color: var(--muted); }
+.card-standard { max-width: 38rem; margin: 0 auto; background: #f7f6f3; }

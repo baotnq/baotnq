@@ -8,6 +8,8 @@ I design systems from invariants — state what must hold, then build so violati
 
 **[t-knowledge-system](https://github.com/baotnq/t-knowledge-system)** — the same rule applied to knowledge instead of state: *a claim becomes knowledge only with a basis and a named owner*. A basis is a committed principle, a sourced fact, or a derivation the owner can rebuild on the spot; records are append-only; stale claims are demoted, never deleted. Closes the gap that data, model and infrastructure sovereignty leave open.
 
+**[Organizational Sovereignty Standard (OrgSov)](https://github.com/ankayma/orgsov-standard)** — the two rules above written as checkable requirements for organizations that let AI agents act and produce knowledge: access that is *isolated, granted, evidenced*, knowledge that is *truth, trust, traceable*, one invariant underneath — every change of state has a named, authorized cause. v0.2 draft, open to challenge by issue; read it at [baotrinh.com/standard](https://baotrinh.com/standard/).
+
 **[operational-friction](https://github.com/baotnq/operational-friction)** — why the workaround is the vulnerability: Bybit, Ronin, MasterChef read as friction chains. Dependency and trust-boundary inventory fails where nobody wrote the dependency down.
 
 **[easywebhub/tasks](https://github.com/easywebhub/tasks)** — the same discipline on people, published 2016: work-item-based communication, two roles with mutual obligations, estimates owned by the assignee and trade-offs decided by the requester — no silent moves. These rules ran my teams a decade before they governed AI agents. (Vietnamese; English summary at top.)
