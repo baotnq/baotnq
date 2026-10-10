@@ -363,4 +363,5 @@ a.card:hover .card-name { text-decoration: underline; }
   color: var(--muted);
 }
 .std-ref a { color: var(--muted); }
+.map-standard { margin: 0 0 2.5rem; }
 .card-standard { max-width: 38rem; margin: 0 auto; background: #f7f6f3; }
