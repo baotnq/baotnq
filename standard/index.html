@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Organizational Sovereignty Standard (OrgSov) — Bao Trinh</title>
-<meta name="description" content="OrgSov v0.2 draft: checkable requirements for organizations that let AI agents act and produce knowledge — access (isolated, granted, evidenced) and knowledge (truth, trust, traceable).">
+<meta name="description" content="OrgSov v0.2 draft: checkable requirements for organizations whose people and AI agents reach systems and produce knowledge — access sovereignty (isolated, granted, evidenced) and knowledge sovereignty (truth, trust, traceable).">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -23,13 +23,13 @@
 
 <main class="essay standard">
   <h1>Organizational Sovereignty Standard (OrgSov)</h1>
-  <p class="subtitle">v0.2 draft &middot; checkable requirements for organizations that let AI agents act and produce knowledge</p>
+  <p class="subtitle">v0.2 draft &middot; checkable requirements for organizations whose people and AI agents reach systems and produce knowledge</p>
 
   <p class="std-source">The canonical text, its signed tags and its history live at
   <a href="https://github.com/ankayma/orgsov-standard">github.com/ankayma/orgsov-standard</a>. To challenge a clause,
   <a href="https://github.com/ankayma/orgsov-standard/issues">open an issue</a> — each one closed with a reason is a recorded round of co-audit.</p>
 
-<p>Checkable requirements for organizations that let AI agents act and produce knowledge.</p>
+<p>Checkable requirements for organizations whose people and AI agents reach systems and produce knowledge.</p>
 <p>Status: draft for the author's review, 10 October 2026. Supersedes v0.1 draft (27 September 2026). Not yet co-audited (see §11).<br>
 License: text of this standard under CC BY 4.0; conformance suites and reference implementations under Apache-2.0. The names and the mark "Sovereign Organization" are not licensed (D1.5). See <a href="https://github.com/ankayma/orgsov-standard/blob/main/LICENSE">LICENSE</a>.<br>
 Author: Bao Trinh (Ankayma, UAE). Public thesis: <a href="https://baotrinh.com">https://baotrinh.com</a> — risk branch <code>/risk/</code>, speed branch <code>/speed/</code>.</p>
@@ -38,16 +38,16 @@ Author: Bao Trinh (Ankayma, UAE). Public thesis: <a href="https://baotrinh.com">
 <p>Abbreviations are introduced once, in §2, and each Part repeats the full term at first use. The standard restates, in normative form, what the source specifications already say (Appendix A). Where the two differ, the source specification governs until v1.0.</p>
 <hr>
 <h2 id="overview-for-the-board">Overview for the board</h2>
-<p>An organization is sovereign over its AI agents when it decides what they may reach and what they may treat as true, and can prove both to a third party.</p>
-<p>Agents now open connections, run tools and write into company records at machine speed. The question a board has to answer is not whether an agent will make a mistake, but who answers when it does, and whether the record of what happened survives the people who made it. This standard puts two checkable conditions on every agent system:</p>
-<ul><li><strong>Access.</strong> Every connection an agent or a person uses has a grant behind it, a named human approved that grant on a device the agent cannot fake, the grant ends on its own, and every grant, opening, closing and refusal sits in a ledger nobody can edit. Three words: <em>isolated, granted, evidenced</em>.</li><li><strong>Knowledge.</strong> Every claim an agent treats as true has a dated source or a derivation that rebuilds, a named human signed it, and the record walks back to its basis; when the basis falls, everything built on it is flagged. Three words: <em>truth, trust, traceable</em>.</li></ul>
-<p>Both conditions share one invariant: every change of state — a path opened, a claim accepted — has a named, authorized cause, recorded where it cannot be edited, and checked continuously by a machine that can only raise a flag. The agent proposes. A human with something to lose signs. A third party reads the record without asking the operator for help.</p>
-<p>An organization that meets both conditions can let any agent, from any vendor, work at full speed in the zones where mistakes can be undone, and can show an auditor, a regulator or an insurer exactly what the agent reached, what it believed, and who stood behind each.</p>
+<p>An organization is sovereign when it decides who may reach what and what may be treated as true — whether the actor is a person, an AI agent, a vendor or an attacker holding a stolen device — and can prove both to a third party.</p>
+<p>AI agents make this urgent. They open connections, run tools and write into company records at machine speed, in volumes no reviewer can follow. But the gap they expose was already there: an insider about to leave, a vendor with a standing login, a laptop taken over by an attacker. The question a board has to answer is not whether someone will make a mistake, but who answers when they do, and whether the record of what happened survives the people who made it. This standard puts two checkable conditions on every actor, human or machine:</p>
+<ul><li><strong>Access sovereignty.</strong> Every connection anyone uses has a grant behind it, a named human approved that grant on a device that cannot be faked, the grant ends on its own, and every grant, opening, closing and refusal sits in a ledger nobody can edit. Three words: <em>isolated, granted, evidenced</em>.</li><li><strong>Knowledge sovereignty.</strong> Every claim the organization treats as true has a dated source or a derivation that rebuilds, a named human signed it, and the record walks back to its basis; when the basis falls, everything built on it is flagged. Three words: <em>truth, trust, traceable</em>.</li></ul>
+<p>Both conditions share one invariant: every change of state — a path opened, a claim accepted — has a named, authorized cause, recorded where it cannot be edited, and checked continuously by a machine that can only raise a flag. Anyone may propose. Only a human with something to lose signs; an AI agent never does. A third party reads the record without asking the operator for help.</p>
+<p>An organization that meets both conditions can let any agent, from any vendor, work at full speed in the zones where mistakes can be undone, can give the same treatment to every person and vendor who reaches its systems, and can show an auditor, a regulator or an insurer exactly what each actor reached, what it relied on, and who stood behind each.</p>
 <p>The standard says what must hold. It does not say how to build it, which vendor to use, or which model to run.</p>
 <hr>
 <h2 id="s1">1. Scope and place among existing standards</h2>
 <h3 id="s1-1">1.1 What this standard governs</h3>
-<p>Two objects: <strong>paths</strong> (who can reach what, through the organization's access layer) and <strong>claims</strong> (what is treated as true in the organization's knowledge ledger). A third object, <strong>effects</strong> (what an agent does once it has a path), is governed by Part B, which restates the Cause-Justified Change Monitoring invariant.</p>
+<p>Two objects: <strong>paths</strong> (who can reach what, through the organization's access layer) and <strong>claims</strong> (what is treated as true in the organization's knowledge ledger). A third object, <strong>effects</strong> (what an actor does once it has a path), is governed by Part B, which restates the Cause-Justified Change Monitoring invariant.</p>
 <h3 id="s1-2">1.2 What it is not</h3>
 <p>It is not a management-system standard. ISO/IEC 42001 defines how an organization runs an AI management system — context, leadership, planning, support, operation, evaluation, improvement — and supplies a control set in its Annex A; NIST AI RMF organizes risk work into Govern, Map, Measure, Manage. OrgSov sits one level down: it is a set of <strong>control requirements with mandatory evidence</strong>, the layer at which ISO/IEC 27001 Annex A controls or SOC 2 trust criteria operate. An organization running ISO 42001 or NIST AI RMF selects OrgSov as the technical control set for its agent systems; OrgSov does not replace the management system.</p>
 <h3 id="s1-3">1.3 Where it lands in the familiar frameworks</h3>
@@ -72,7 +72,7 @@ Author: Bao Trinh (Ankayma, UAE). Public thesis: <a href="https://baotrinh.com">
 <p><em>Traceable.</em> Every trusted claim walks back to its basis. Nothing is deleted. When a premise falls, every claim that stood on it reads as fallen. Status is computed from history, never stored.</p>
 <p>Part B carries no invariant of its own: it is <em>Cause</em> applied to effects, with the cause channel as the record.</p>
 <hr>
-<h2 id="s3">3. Part A — Access (access sovereignty)</h2>
+<h2 id="s3">3. Part A — Access sovereignty</h2>
 <p><strong>Definition.</strong> Access sovereignty is the standing work of keeping every path in the access layer at all three: isolated, granted, evidenced. A path exists only for a grant a human made and a ledger holds. The organization is the root of every grant. Nobody alone — an agent, a compromised node or an insider — can create a path or erase its record.</p>
 <p><strong>Invariants.</strong> Isolated, Granted, Evidenced (§2b). Each section below names the invariant it enforces.</p>
 <p><strong>Threat model</strong> (informative). Part A is tested against three adversaries: an agent acting against instruction (injection, self-expansion); an attacker who holds an internal node and its keys; an insider with a valid identity and a motive. For each, the suite in D2 checks that no path opens without A2 and that every attempt appears in A4.</p>
@@ -102,7 +102,7 @@ Author: Bao Trinh (Ankayma, UAE). Public thesis: <a href="https://baotrinh.com">
 <h3 id="b5">B5. Evidence <code>[runs: CJCM report]</code></h3>
 <ul><li id="b5-1">B5.1 The effect log, the cause channel and V(w) reports MUST be readable by a third party without the operator's help.</li></ul>
 <hr>
-<h2 id="s5">5. Part C — Knowledge (knowledge sovereignty)</h2>
+<h2 id="s5">5. Part C — Knowledge sovereignty</h2>
 <p><strong>Definition.</strong> Knowledge sovereignty is the standing work of keeping every trusted claim in the ledger at all three: truth, trust, traceable. A claim counts as knowledge only with a path back and a human name. The organization can withdraw any claim, and the withdrawal reaches everything that stood on it.</p>
 <p><strong>Invariants.</strong> Truth, Trust, Traceable (§2b). Each section below names the invariant it enforces.</p>
 <p>Clauses are carried from v0.1 B1–B11, regrouped under the three invariants and one enforcement section.</p>
